@@ -1,3 +1,6 @@
+[![ci](https://github.com/niisaban/marketing-mix-model/actions/workflows/ci.yml/badge.svg)](https://github.com/niisaban/marketing-mix-model/actions/workflows/ci.yml)
+
+
 # Marketing Mix Modeling (MMM) — Ridge + Adstock + Saturation
 
 **MMM = Marketing Mix Modeling**.  
