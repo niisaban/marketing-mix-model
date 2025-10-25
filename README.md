@@ -43,3 +43,5 @@ marketing-mix-model/
 - Plots saved to `outputs/` (optional).
 
 > This is intentionally light‑weight (no PyMC/Stan) to keep it interview‑ready.
+
+> Note: run pytest -q locally before pushing.
