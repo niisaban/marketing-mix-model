@@ -1,0 +1,37 @@
+﻿name: ci
+
+on:
+  push:
+    paths:
+      - "src/**"
+      - "tests/**"
+      - "requirements.txt"
+      - ".github/workflows/ci.yml"
+  pull_request:
+
+# cancel older runs of the same branch/PR to save CI minutes
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      PYTHONPATH: .
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip wheel setuptools
+          pip install --prefer-binary -r requirements.txt
+
+      - name: Run tests
+        run: pytest -q tests --maxfail=1 -ra
