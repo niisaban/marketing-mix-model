@@ -14,6 +14,22 @@ python scripts/run_end_to_end.py
 pytest -q
 ```
 
+### Run tests locally
+
+# Windows (PowerShell, current session)
+$env:PYTHONPATH = (Get-Location).Path
+pytest -q --maxfail=1 -ra
+
+# macOS / Linux (bash/zsh, current session)
+export PYTHONPATH="$PWD"
+pytest -q --maxfail=1 -ra
+
+# (Optional) Windows CMD
+:: set PYTHONPATH for this session
+set PYTHONPATH=%CD%
+pytest -q --maxfail=1 -ra
+
+
 ## Structure
 ```
 marketing-mix-model/
