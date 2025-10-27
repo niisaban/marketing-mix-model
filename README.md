@@ -8,26 +8,40 @@ We simulate weekly KPIs (e.g., subscriptions) and channel spends, transform spen
 
 ## Quickstart
 ```bash
+# (Recommended) Python 3.11+
 python -m venv .venv && source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-python scripts/run_end_to_end.py
+
+# Run a small demo (simulate + analyze)
+python scripts/run_demo.py
+
+# Run tests
 pytest -q
 ```
-
 ### Run tests locally
 
-# Windows (PowerShell, current session)
+#### Windows (PowerShell, current session)
+```powershell
+# Expose repo root to Python for this shell session
 $env:PYTHONPATH = (Get-Location).Path
 pytest -q --maxfail=1 -ra
+```
 
-# macOS / Linux (bash/zsh, current session)
+#### macOS / Linux (bash/zsh, current session)
+```bash
+# Expose repo root to Python for this shell session
 export PYTHONPATH="$PWD"
 pytest -q --maxfail=1 -ra
+```
 
-# (Optional) Windows CMD
-:: set PYTHONPATH for this session
+#### (Optional) Windows CMD
+```bat
+:: Expose repo root to Python for this CMD session
 set PYTHONPATH=%CD%
+
+:: Run tests (quiet; stop early; show failure summary)
 pytest -q --maxfail=1 -ra
+```
 
 
 ## Structure
