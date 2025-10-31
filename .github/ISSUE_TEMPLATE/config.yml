@@ -1,5 +1,10 @@
 blank_issues_enabled: false
+
 contact_links:
-  - name: Questions / Usage
-    url: https://github.com/<owner>/<repo>/discussions
-    about: Ask questions and get help in Discussions.
+  - name: "📚 Read the docs / README"
+    url: https://github.com/niisaban/marketing-mix-model#readme
+    about: Start here for setup, quickstart, and FAQs.
+
+  - name: "💬 Ask a question (GitHub Discussions)"
+    url: https://github.com/niisaban/marketing-mix-model/discussions
+    about: Use Discussions for how-to questions and open-ended topics.
