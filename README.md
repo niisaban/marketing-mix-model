@@ -78,3 +78,9 @@ marketing-mix-model/
 > This is intentionally light‑weight (no PyMC/Stan) to keep it interview‑ready.
 
 > Note: run pytest -q locally before pushing.
+
+
+### Get help / share results
+
+- ❓ Ask a question → [New Q&A](https://github.com/niisaban/marketing-mix-model/discussions/new?category=Q%26A)
+- 🎉 Share a result → [New Show & Tell](https://github.com/niisaban/marketing-mix-model/discussions/new?category=Show%20and%20tell)
