@@ -1,3 +1,4 @@
+# .github/ISSUE_TEMPLATE/config.yml
 blank_issues_enabled: false
 
 contact_links:
@@ -5,6 +6,16 @@ contact_links:
     url: https://github.com/niisaban/marketing-mix-model#readme
     about: Start here for setup, quickstart, and FAQs.
 
-  - name: "💬 Ask a question (GitHub Discussions)"
-    url: https://github.com/niisaban/marketing-mix-model/discussions
-    about: Use Discussions for how-to questions and open-ended topics.
+  - name: "❓ Ask a question (Q&A on Discussions)"
+    # Tip: open “New discussion”, choose your Q&A category, then copy the URL you see.
+    # If your category name is “Q&A”, this works:
+    url: https://github.com/niisaban/marketing-mix-model/discussions/new?category=Q%26A
+    about: Get help with setup, usage, or results.
+
+  - name: "✨ Share a result (Show & tell)"
+    # Use the exact category label, URL-encoded. If yours is “Show and tell”, use %20 for spaces.
+    # Example with “Show and tell”:
+    url: https://github.com/niisaban/marketing-mix-model/discussions/new?category=Show%20and%20tell
+    # Example if your category is “Show & Tell”:
+    # url: https://github.com/niisaban/marketing-mix-model/discussions/new?category=Show%20%26%20Tell
+    about: Post findings, charts, or tips for others to see.
